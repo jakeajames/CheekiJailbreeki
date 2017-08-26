@@ -19,7 +19,31 @@
 		1D7579CD1F4F324400408C5A /* devicesupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7579CC1F4F324400408C5A /* devicesupport.m */; };
 		1D7579D51F4F333700408C5A /* iosurface_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7579D41F4F333700408C5A /* iosurface_utils.m */; };
 		1D7579D81F4F336000408C5A /* kernel_read.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7579D71F4F336000408C5A /* kernel_read.m */; };
-		EA1A3B9D1E391C4F009CA025 /* patchfinder64.o in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1A3B9C1E391C4F009CA025 /* patchfinder64.o */; };
+		82993E881F517EA9007A7F5B /* cdhash.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E791F517EA9007A7F5B /* cdhash.c */; };
+		82993E891F517EA9007A7F5B /* cdhash.h in Sources */ = {isa = PBXBuildFile; fileRef = 82993E7A1F517EA9007A7F5B /* cdhash.h */; };
+		82993E8A1F517EA9007A7F5B /* debugger_support.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E7B1F517EA9007A7F5B /* debugger_support.c */; };
+		82993E8B1F517EA9007A7F5B /* debugger_support.h in Sources */ = {isa = PBXBuildFile; fileRef = 82993E7C1F517EA9007A7F5B /* debugger_support.h */; };
+		82993E8C1F517EA9007A7F5B /* drop_payload.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E7D1F517EA9007A7F5B /* drop_payload.c */; };
+		82993E8D1F517EA9007A7F5B /* minibplist16.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E7E1F517EA9007A7F5B /* minibplist16.c */; };
+		82993E8E1F517EA9007A7F5B /* patch_amfid.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E7F1F517EA9007A7F5B /* patch_amfid.c */; };
+		82993E8F1F517EA9007A7F5B /* post_exploit.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E801F517EA9007A7F5B /* post_exploit.c */; };
+		82993E901F517EA9007A7F5B /* remote_call.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E811F517EA9007A7F5B /* remote_call.c */; };
+		82993E911F517EA9007A7F5B /* remote_file.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E821F517EA9007A7F5B /* remote_file.c */; };
+		82993E921F517EA9007A7F5B /* remote_memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E831F517EA9007A7F5B /* remote_memory.c */; };
+		82993E931F517EA9007A7F5B /* remote_ports.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E841F517EA9007A7F5B /* remote_ports.c */; };
+		82993E941F517EA9007A7F5B /* sploit.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E851F517EA9007A7F5B /* sploit.c */; };
+		82993E951F517EA9007A7F5B /* task_ports.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E861F517EA9007A7F5B /* task_ports.c */; };
+		82993E961F517EA9007A7F5B /* xpc_handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E871F517EA9007A7F5B /* xpc_handshake.c */; };
+		82993EA11F517EB9007A7F5B /* oxpc_array.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E971F517EB9007A7F5B /* oxpc_array.c */; };
+		82993EA21F517EB9007A7F5B /* oxpc_data.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E981F517EB9007A7F5B /* oxpc_data.c */; };
+		82993EA31F517EB9007A7F5B /* oxpc_dictionary.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E991F517EB9007A7F5B /* oxpc_dictionary.c */; };
+		82993EA41F517EB9007A7F5B /* oxpc_mach_send.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E9A1F517EB9007A7F5B /* oxpc_mach_send.c */; };
+		82993EA51F517EB9007A7F5B /* oxpc_object.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E9B1F517EB9007A7F5B /* oxpc_object.c */; };
+		82993EA61F517EB9007A7F5B /* oxpc_ool_data.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E9C1F517EB9007A7F5B /* oxpc_ool_data.c */; };
+		82993EA71F517EB9007A7F5B /* oxpc_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E9D1F517EB9007A7F5B /* oxpc_string.c */; };
+		82993EA81F517EB9007A7F5B /* oxpc_uint64.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E9E1F517EB9007A7F5B /* oxpc_uint64.c */; };
+		82993EA91F517EB9007A7F5B /* oxpc_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993E9F1F517EB9007A7F5B /* oxpc_utils.c */; };
+		82993EAA1F517EB9007A7F5B /* oxpc_uuid.c in Sources */ = {isa = PBXBuildFile; fileRef = 82993EA01F517EB9007A7F5B /* oxpc_uuid.c */; };
 		EA1A3BA81E398E33009CA025 /* 0.reload.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA1A3BA61E398E33009CA025 /* 0.reload.plist */; };
 		EA1A3BAD1E399006009CA025 /* reload in Resources */ = {isa = PBXBuildFile; fileRef = EA1A3BAC1E399006009CA025 /* reload */; };
 		EA1A3BC51E39D1FF009CA025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA1A3BC41E39D1FF009CA025 /* Assets.xcassets */; };
@@ -63,8 +87,31 @@
 		1D7579D41F4F333700408C5A /* iosurface_utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iosurface_utils.m; sourceTree = "<group>"; };
 		1D7579D61F4F336000408C5A /* kernel_read.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kernel_read.h; sourceTree = "<group>"; };
 		1D7579D71F4F336000408C5A /* kernel_read.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kernel_read.m; sourceTree = "<group>"; };
-		EA1A3B9B1E38BBDB009CA025 /* patchfinder64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = patchfinder64.h; sourceTree = "<group>"; };
-		EA1A3B9C1E391C4F009CA025 /* patchfinder64.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = patchfinder64.o; sourceTree = "<group>"; };
+		82993E791F517EA9007A7F5B /* cdhash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = cdhash.c; path = yalu102/sandbox/cdhash.c; sourceTree = "<group>"; };
+		82993E7A1F517EA9007A7F5B /* cdhash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cdhash.h; path = yalu102/sandbox/cdhash.h; sourceTree = "<group>"; };
+		82993E7B1F517EA9007A7F5B /* debugger_support.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = debugger_support.c; path = yalu102/sandbox/debugger_support.c; sourceTree = "<group>"; };
+		82993E7C1F517EA9007A7F5B /* debugger_support.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = debugger_support.h; path = yalu102/sandbox/debugger_support.h; sourceTree = "<group>"; };
+		82993E7D1F517EA9007A7F5B /* drop_payload.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = drop_payload.c; path = yalu102/sandbox/drop_payload.c; sourceTree = "<group>"; };
+		82993E7E1F517EA9007A7F5B /* minibplist16.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = minibplist16.c; path = yalu102/sandbox/minibplist16.c; sourceTree = "<group>"; };
+		82993E7F1F517EA9007A7F5B /* patch_amfid.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = patch_amfid.c; path = yalu102/sandbox/patch_amfid.c; sourceTree = "<group>"; };
+		82993E801F517EA9007A7F5B /* post_exploit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = post_exploit.c; path = yalu102/sandbox/post_exploit.c; sourceTree = "<group>"; };
+		82993E811F517EA9007A7F5B /* remote_call.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = remote_call.c; path = yalu102/sandbox/remote_call.c; sourceTree = "<group>"; };
+		82993E821F517EA9007A7F5B /* remote_file.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = remote_file.c; path = yalu102/sandbox/remote_file.c; sourceTree = "<group>"; };
+		82993E831F517EA9007A7F5B /* remote_memory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = remote_memory.c; path = yalu102/sandbox/remote_memory.c; sourceTree = "<group>"; };
+		82993E841F517EA9007A7F5B /* remote_ports.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = remote_ports.c; path = yalu102/sandbox/remote_ports.c; sourceTree = "<group>"; };
+		82993E851F517EA9007A7F5B /* sploit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = sploit.c; path = yalu102/sandbox/sploit.c; sourceTree = "<group>"; };
+		82993E861F517EA9007A7F5B /* task_ports.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = task_ports.c; path = yalu102/sandbox/task_ports.c; sourceTree = "<group>"; };
+		82993E871F517EA9007A7F5B /* xpc_handshake.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = xpc_handshake.c; path = yalu102/sandbox/xpc_handshake.c; sourceTree = "<group>"; };
+		82993E971F517EB9007A7F5B /* oxpc_array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = oxpc_array.c; path = yalu102/sandbox/liboxpc/oxpc_array.c; sourceTree = "<group>"; };
+		82993E981F517EB9007A7F5B /* oxpc_data.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = oxpc_data.c; path = yalu102/sandbox/liboxpc/oxpc_data.c; sourceTree = "<group>"; };
+		82993E991F517EB9007A7F5B /* oxpc_dictionary.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = oxpc_dictionary.c; path = yalu102/sandbox/liboxpc/oxpc_dictionary.c; sourceTree = "<group>"; };
+		82993E9A1F517EB9007A7F5B /* oxpc_mach_send.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = oxpc_mach_send.c; path = yalu102/sandbox/liboxpc/oxpc_mach_send.c; sourceTree = "<group>"; };
+		82993E9B1F517EB9007A7F5B /* oxpc_object.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = oxpc_object.c; path = yalu102/sandbox/liboxpc/oxpc_object.c; sourceTree = "<group>"; };
+		82993E9C1F517EB9007A7F5B /* oxpc_ool_data.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = oxpc_ool_data.c; path = yalu102/sandbox/liboxpc/oxpc_ool_data.c; sourceTree = "<group>"; };
+		82993E9D1F517EB9007A7F5B /* oxpc_string.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = oxpc_string.c; path = yalu102/sandbox/liboxpc/oxpc_string.c; sourceTree = "<group>"; };
+		82993E9E1F517EB9007A7F5B /* oxpc_uint64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = oxpc_uint64.c; path = yalu102/sandbox/liboxpc/oxpc_uint64.c; sourceTree = "<group>"; };
+		82993E9F1F517EB9007A7F5B /* oxpc_utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = oxpc_utils.c; path = yalu102/sandbox/liboxpc/oxpc_utils.c; sourceTree = "<group>"; };
+		82993EA01F517EB9007A7F5B /* oxpc_uuid.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = oxpc_uuid.c; path = yalu102/sandbox/liboxpc/oxpc_uuid.c; sourceTree = "<group>"; };
 		EA1A3BA61E398E33009CA025 /* 0.reload.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 0.reload.plist; sourceTree = "<group>"; };
 		EA1A3BAC1E399006009CA025 /* reload */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = reload; sourceTree = "<group>"; };
 		EA1A3BC41E39D1FF009CA025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,7 +140,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA9901141E21A1B00056FEBD /* iokitmig64.o in Frameworks */,
-				EA1A3B9D1E391C4F009CA025 /* patchfinder64.o in Frameworks */,
 				EA9901191E21A2180056FEBD /* IOKit.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +158,31 @@
 		EA9900DA1E1E9F060056FEBD = {
 			isa = PBXGroup;
 			children = (
+				82993E971F517EB9007A7F5B /* oxpc_array.c */,
+				82993E981F517EB9007A7F5B /* oxpc_data.c */,
+				82993E991F517EB9007A7F5B /* oxpc_dictionary.c */,
+				82993E9A1F517EB9007A7F5B /* oxpc_mach_send.c */,
+				82993E9B1F517EB9007A7F5B /* oxpc_object.c */,
+				82993E9C1F517EB9007A7F5B /* oxpc_ool_data.c */,
+				82993E9D1F517EB9007A7F5B /* oxpc_string.c */,
+				82993E9E1F517EB9007A7F5B /* oxpc_uint64.c */,
+				82993E9F1F517EB9007A7F5B /* oxpc_utils.c */,
+				82993EA01F517EB9007A7F5B /* oxpc_uuid.c */,
+				82993E791F517EA9007A7F5B /* cdhash.c */,
+				82993E7A1F517EA9007A7F5B /* cdhash.h */,
+				82993E7B1F517EA9007A7F5B /* debugger_support.c */,
+				82993E7C1F517EA9007A7F5B /* debugger_support.h */,
+				82993E7D1F517EA9007A7F5B /* drop_payload.c */,
+				82993E7E1F517EA9007A7F5B /* minibplist16.c */,
+				82993E7F1F517EA9007A7F5B /* patch_amfid.c */,
+				82993E801F517EA9007A7F5B /* post_exploit.c */,
+				82993E811F517EA9007A7F5B /* remote_call.c */,
+				82993E821F517EA9007A7F5B /* remote_file.c */,
+				82993E831F517EA9007A7F5B /* remote_memory.c */,
+				82993E841F517EA9007A7F5B /* remote_ports.c */,
+				82993E851F517EA9007A7F5B /* sploit.c */,
+				82993E861F517EA9007A7F5B /* task_ports.c */,
+				82993E871F517EA9007A7F5B /* xpc_handshake.c */,
 				EA9900E51E1E9F060056FEBD /* yalu102 */,
 				EA9900E41E1E9F060056FEBD /* Products */,
 				1D7579C91F4F313800408C5A /* Frameworks */,
@@ -131,7 +202,6 @@
 			children = (
 				1D7579CE1F4F327900408C5A /* IOSurface.tbd */,
 				EAA7F7C61E3EE4AF00BE3C64 /* dropbear.plist */,
-				EA1A3B9B1E38BBDB009CA025 /* patchfinder64.h */,
 				EA9901031E219C210056FEBD /* offsets.h */,
 				1D7579BB1F4F2FC700408C5A /* offsets.m */,
 				1D7579C61F4F2FE300408C5A /* log.h */,
@@ -169,7 +239,6 @@
 				EA9901091E21A04C0056FEBD /* tar */,
 				EA99010B1E21A0520056FEBD /* launchctl */,
 				EA9901131E21A1B00056FEBD /* iokitmig64.o */,
-				EA1A3B9C1E391C4F009CA025 /* patchfinder64.o */,
 				EA99010F1E21A1A00056FEBD /* pte_stuff.h */,
 				EA1A3BC41E39D1FF009CA025 /* Assets.xcassets */,
 				EA9901181E21A2180056FEBD /* IOKit.tbd */,
@@ -218,7 +287,7 @@
 				TargetAttributes = {
 					EA9900E21E1E9F060056FEBD = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 9JT363B6HH;
+						DevelopmentTeam = 22G2QV87A2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -265,6 +334,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82993EA11F517EB9007A7F5B /* oxpc_array.c in Sources */,
+				82993EA21F517EB9007A7F5B /* oxpc_data.c in Sources */,
+				82993EA31F517EB9007A7F5B /* oxpc_dictionary.c in Sources */,
+				82993EA41F517EB9007A7F5B /* oxpc_mach_send.c in Sources */,
+				82993EA51F517EB9007A7F5B /* oxpc_object.c in Sources */,
+				82993EA61F517EB9007A7F5B /* oxpc_ool_data.c in Sources */,
+				82993EA71F517EB9007A7F5B /* oxpc_string.c in Sources */,
+				82993EA81F517EB9007A7F5B /* oxpc_uint64.c in Sources */,
+				82993EA91F517EB9007A7F5B /* oxpc_utils.c in Sources */,
+				82993EAA1F517EB9007A7F5B /* oxpc_uuid.c in Sources */,
+				82993E881F517EA9007A7F5B /* cdhash.c in Sources */,
+				82993E891F517EA9007A7F5B /* cdhash.h in Sources */,
+				82993E8A1F517EA9007A7F5B /* debugger_support.c in Sources */,
+				82993E8B1F517EA9007A7F5B /* debugger_support.h in Sources */,
+				82993E8C1F517EA9007A7F5B /* drop_payload.c in Sources */,
+				82993E8D1F517EA9007A7F5B /* minibplist16.c in Sources */,
+				82993E8E1F517EA9007A7F5B /* patch_amfid.c in Sources */,
+				82993E8F1F517EA9007A7F5B /* post_exploit.c in Sources */,
+				82993E901F517EA9007A7F5B /* remote_call.c in Sources */,
+				82993E911F517EA9007A7F5B /* remote_file.c in Sources */,
+				82993E921F517EA9007A7F5B /* remote_memory.c in Sources */,
+				82993E931F517EA9007A7F5B /* remote_ports.c in Sources */,
+				82993E941F517EA9007A7F5B /* sploit.c in Sources */,
+				82993E951F517EA9007A7F5B /* task_ports.c in Sources */,
+				82993E961F517EA9007A7F5B /* xpc_handshake.c in Sources */,
 				1D7579BC1F4F2FC700408C5A /* offsets.m in Sources */,
 				1D7579C31F4F2FD500408C5A /* post_exploit.m in Sources */,
 				EA9900EE1E1E9F060056FEBD /* ViewController.m in Sources */,
@@ -408,7 +502,7 @@
 				ARCHS = armv7;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				DEVELOPMENT_TEAM = 9JT363B6HH;
+				DEVELOPMENT_TEAM = 22G2QV87A2;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = yalu102/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -416,7 +510,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/yalu102",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kim.cracksby.yalu102100000;
+				PRODUCT_BUNDLE_IDENTIFIER = net.iapps4u.nonce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALID_ARCHS = armv7;
@@ -430,7 +524,7 @@
 				ARCHS = armv7;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				DEVELOPMENT_TEAM = 9JT363B6HH;
+				DEVELOPMENT_TEAM = 22G2QV87A2;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = yalu102/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -438,7 +532,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/yalu102",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kim.cracksby.yalu102100000;
+				PRODUCT_BUNDLE_IDENTIFIER = net.iapps4u.nonce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALID_ARCHS = armv7;
